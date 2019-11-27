@@ -38,6 +38,18 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Ground
+    uniqueID: 2829137607
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Enemies
+    uniqueID: 861693059
+    locked: 0
+  - name: Dray
+    uniqueID: 2491701677
+    locked: 0
+  - name: Items
+    uniqueID: 665277913
     locked: 0
