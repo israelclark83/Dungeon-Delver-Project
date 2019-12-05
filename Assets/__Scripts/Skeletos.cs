@@ -21,13 +21,16 @@ public class Skeletos : Enemy, IFacingMover
         inRm = GetComponent<InRoom>();
     }
 
-    void Update()
+    override protected void Update()
     {
+        base.Update();
+        if (knockback) return;
+
         if (Time.time >= timeNextDecision)
         {
             DecideDirection();
         }
-        // rigid is inherited from Enemy and is initialized in Enemy.Awake()
+        // rigid is inherited from Enemy, which defines it in Enemy.Awake()
         rigid.velocity = directions[facing] * speed;
     }
 
